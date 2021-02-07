@@ -1,0 +1,11 @@
+<button
+  type="button"
+  [class.button-danger]="type === 'danger'"
+  [class.button-default]="type === 'default'"
+  [class.button-primary]="type === 'primary'"
+  [class.button-success]="type === 'success'"
+  [disabled]="disabled"
+  (click)="onClick()">
+  <!--  -->
+  <span>{{label}}</span>
+</button>
