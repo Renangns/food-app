@@ -1,0 +1,14 @@
+.card {
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  padding: 20px 10px;
+}
+
+.box-shadow {
+  box-shadow: 0 3px 6px rgba(149, 157, 165, 0.15);
+}
+
+/* --color-shadow-small: 0 1px 0 rgba(27,31,35,0.04);
+    --color-shadow-medium: 0 3px 6px rgba(149,157,165,0.15);
+    --color-shadow-large: 0 8px 24px rgba(149,157,165,0.2);
+    --color-shadow-extra-large: 0 12px 48px rgba(149,157,165,0.3); */
