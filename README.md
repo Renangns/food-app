@@ -1,3 +1,5 @@
+![UI-COMPONENT-TEST](https://github.com/Renangns/whats-catalogo-front/workflows/UI-COMPONENT-TEST/badge.svg)
+
 # Em Desenvovimento
 
 # FrontWorkspace
