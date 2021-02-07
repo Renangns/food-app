@@ -26,6 +26,11 @@ class TestLargeBoxShadowComponent {}
 })
 class TestExtraLargeBoxShadowComponent {}
 
+@Component({
+  template: `<input type="text" chxBoxShadow="" />`,
+})
+class TesWithOutBoxShadowComponent {}
+
 describe('BoxShadowDirective', () => {
   let directive: BoxShadowDirective;
 
@@ -44,6 +49,10 @@ describe('BoxShadowDirective', () => {
   let componentXL: TestExtraLargeBoxShadowComponent;
   let fixtureXL: ComponentFixture<TestExtraLargeBoxShadowComponent>;
   let inputElXL: DebugElement;
+
+  let componentN: TesWithOutBoxShadowComponent;
+  let fixtureN: ComponentFixture<TesWithOutBoxShadowComponent>;
+  let inputElN: DebugElement;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
@@ -78,6 +87,10 @@ describe('BoxShadowDirective', () => {
     fixtureXL = TestBed.createComponent(TestExtraLargeBoxShadowComponent);
     componentXL = fixtureXL.componentInstance;
     inputElXL = fixtureXL.debugElement.query(By.css('input'));
+
+    fixtureN = TestBed.createComponent(TesWithOutBoxShadowComponent);
+    componentN = fixtureN.componentInstance;
+    inputElN = fixtureN.debugElement.query(By.css('input'));
   });
 
   it('should create the app', () => {
@@ -86,7 +99,6 @@ describe('BoxShadowDirective', () => {
 
   it('should applied small shadow', () => {
     fixture.detectChanges();
-    console.log(inputEl.nativeElement);
     const nativeElement = inputEl.nativeElement;
     const shadow = nativeElement.style.boxShadow;
     expect(shadow).toBe('rgba(27, 31, 35, 0.04) 0px 1px 0px');
@@ -96,7 +108,6 @@ describe('BoxShadowDirective', () => {
     fixtureM.detectChanges();
     const nativeElement = inputElM.nativeElement;
     const shadow = nativeElement.style.boxShadow;
-    console.log(nativeElement);
     expect(shadow).toBe('rgba(149, 157, 165, 0.15) 0px 3px 6px');
   });
 
@@ -112,5 +123,11 @@ describe('BoxShadowDirective', () => {
     const nativeElement = inputElXL.nativeElement;
     const shadow = nativeElement.style.boxShadow;
     expect(shadow).toBe('rgba(149, 157, 165, 0.3) 0px 12px 48px');
+  });
+
+  it('should not apply shadow', () => {
+    const nativeElement = inputElN.nativeElement;
+    const shadow = nativeElement.style.boxShadow;
+    expect(shadow).toBe('');
   });
 });
