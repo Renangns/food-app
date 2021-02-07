@@ -2,6 +2,8 @@
 
 # Em Desenvovimento
 
+Bliblioteca contendo os components visuais que será usado no projeto
+
 # UiComponents
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.9.
