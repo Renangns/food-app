@@ -3,7 +3,10 @@
 name: UI-COMPONENT-TEST
 
 # Controls when the action will run.
-on: [push]
+on:
+  push:
+    paths:
+      - 'projects/ui-components/**'
 
 #on:
 # Triggers the workflow on push or pull request events but only for the main branch
