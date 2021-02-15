@@ -1,11 +1,14 @@
 <chx-card shadow="small">
   <h1>Oi</h1>
   <p>Teste do cattd</p>
-  <chx-button label="label" [disabled]=true (chx-click)="click()"></chx-button>
+  <chx-button
+    label="label"
+    [disabled]="true"
+    (chx-click)="click()"
+  ></chx-button>
   <chx-button label="label" type="danger" (chx-click)="click()"></chx-button>
   <chx-button label="label" type="primary"></chx-button>
-  <chx-button label="label" type="success"></chx-button>
+  <chx-button label="+" type="success" [small]="true"></chx-button>
 </chx-card>
 
-<chx-card shadow="large">
-</chx-card>
+<chx-card shadow="large"> </chx-card>

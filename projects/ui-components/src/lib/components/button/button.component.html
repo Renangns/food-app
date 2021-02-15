@@ -4,8 +4,11 @@
   [class.button-default]="type === 'default'"
   [class.button-primary]="type === 'primary'"
   [class.button-success]="type === 'success'"
+  [class.button-small]="small"
+  [class.button-size]="!small"
   [disabled]="disabled"
-  (click)="onClick()">
+  (click)="onClick()"
+>
   <!--  -->
-  <span>{{label}}</span>
+  <span>{{ label }}</span>
 </button>

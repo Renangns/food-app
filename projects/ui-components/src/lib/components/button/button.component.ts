@@ -11,6 +11,7 @@ const BUTTON_TYPE_DEFAULT = 'default';
 export class ButtonComponent implements OnInit {
   private _disabled? = false;
   private _type? = 'default';
+  private _small? = false;
 
   /**
    * @optional
@@ -38,6 +39,13 @@ export class ButtonComponent implements OnInit {
     return this._disabled!;
   }
 
+  /**
+   * @optional
+   *
+   * @description
+   *
+   * Sets the button style
+   */
   @Input('type') set type(value: string) {
     this._type = BUTTON_TYPES.includes(value) ? value : BUTTON_TYPE_DEFAULT;
   }
@@ -45,6 +53,22 @@ export class ButtonComponent implements OnInit {
   get type(): string {
     // tslint:disable-next-line: no-non-null-assertion
     return this._type!;
+  }
+
+  /**
+   * @optional
+   *
+   * @description
+   *
+   * Sets the button to have a small size
+   */
+  @Input('small') set small(value: boolean) {
+    this._small = undefined ? false : true;
+  }
+
+  get small(): boolean {
+    // tslint:disable-next-line: no-non-null-assertion
+    return this._small!;
   }
 
   /** Ação que será executada quando o usuário clicar sobre o `po-button`. */

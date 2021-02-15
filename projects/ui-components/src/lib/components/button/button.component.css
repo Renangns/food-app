@@ -15,9 +15,7 @@ button {
   vertical-align: baseline;
   text-align: center;
   margin: 0;
-  min-width: 64px;
-  line-height: 36px;
-  padding: 0 16px;
+
   border-radius: 4px;
   overflow: visible;
   transform: translate3d(0, 0, 0);
@@ -51,4 +49,16 @@ button:active {
 .button-primary {
   background-color: blueviolet;
   color: white;
+}
+
+.button-small {
+  min-width: 30px;
+  line-height: 20px;
+  padding: 0 8px;
+}
+
+.button-size {
+  min-width: 64px;
+  line-height: 36px;
+  padding: 0 16px;
 }
