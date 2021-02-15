@@ -71,7 +71,7 @@ export class ButtonComponent implements OnInit {
     return this._small!;
   }
 
-  /** Ação que será executada quando o usuário clicar sobre o `po-button`. */
+  /** action to be executed when the users click on button. */
   @Output('chx-click') click = new EventEmitter<null>();
 
   constructor() {}
