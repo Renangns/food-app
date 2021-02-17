@@ -1,0 +1,46 @@
+.header {
+  margin-bottom: 2em;
+}
+.card {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  padding: 0 10px;
+  text-decoration: none;
+  & .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #797979;
+
+    & span {
+      margin-right: 1em;
+
+      & i {
+        font-size: 2rem;
+      }
+    }
+
+    & h2 {
+      font-weight: normal;
+    }
+  }
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  & p {
+    padding: 20px;
+    color: rgba(0, 0, 0, 0.589);
+    line-height: 1.2;
+    text-align: center;
+  }
+}

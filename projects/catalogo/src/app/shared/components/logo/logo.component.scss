@@ -1,0 +1,14 @@
+.img-wrapper {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.692);
+  & img {
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+  }
+}

@@ -1,4 +1,5 @@
 ![UI-COMPONENT-TEST](https://github.com/Renangns/whats-catalogo-front/workflows/UI-COMPONENT-TEST/badge.svg)
+![CATALOGO-TEST](https://github.com/Renangns/whats-catalogo-front/workflows/CATALOGO-TEST/badge.svg)
 
 # Em Desenvovimento
 

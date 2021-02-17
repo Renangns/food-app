@@ -1,0 +1,21 @@
+$bottom-radius: 2em;
+
+.header-wrapper {
+  position: relative;
+  margin-bottom: 1.8em;
+
+  & .img-banner {
+    display: block;
+    max-width: 1980px;
+    width: 100%;
+    max-height: 200px;
+    border-bottom-left-radius: $bottom-radius;
+    border-bottom-right-radius: $bottom-radius;
+  }
+
+  & .logo {
+    position: absolute;
+    bottom: -1.5em;
+    left: 38%;
+  }
+}
