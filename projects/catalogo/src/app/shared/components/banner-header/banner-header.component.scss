@@ -1,3 +1,5 @@
+@import "../../../../stylings/variables";
+
 $bottom-radius: 2em;
 
 .header-wrapper {
@@ -8,9 +10,17 @@ $bottom-radius: 2em;
     display: block;
     max-width: 1980px;
     width: 100%;
-    max-height: 200px;
+    height: auto;
     border-bottom-left-radius: $bottom-radius;
     border-bottom-right-radius: $bottom-radius;
+    margin: 0 auto;
+    // @media screen and (min-width: $md) {
+    //   max-height: 300px;
+    // }
+
+    // @media screen and (min-width: $lg) {
+    //   max-height: 400px;
+    // }
   }
 
   & .logo {

@@ -10,10 +10,8 @@ export class HomeService {
 
   getHomeInfos(): Observable<Home> {
     return of({
-      banner:
-        'https://www.saboravida.com.br/wp-content/uploads/2019/07/conheca-os-beneficios-da-culinaria-japonesa.jpg',
-      logo:
-        'https://www.logaster.com.br/blog/wp-content/uploads/sites/6/2019/03/0102_t_sushi-house-logo_6.png',
+      banner: 'https://loremflickr.com/1980/600',
+      logo: 'https://www.logaster.com.br/blog/wp-content/uploads/sites/6/2019/03/0102_t_sushi-house-logo_6.png',
       brandName: 'Sushi House',
       brandDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever since the`,

@@ -1,28 +1,39 @@
+@import "../../stylings/variables";
+
 .header {
   margin-bottom: 2em;
 }
-.card {
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-  padding: 0 10px;
-  text-decoration: none;
-  & .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #797979;
 
-    & span {
-      margin-right: 1em;
+.card-wrapper {
+  .card {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    text-decoration: none;
 
-      & i {
-        font-size: 2rem;
+    & .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #797979;
+
+      & span {
+        margin-right: 1em;
+
+        & i {
+          font-size: 2rem;
+        }
+      }
+
+      & h2 {
+        font-weight: normal;
       }
     }
+  }
 
-    & h2 {
-      font-weight: normal;
-    }
+  @media screen and (min-width: $md) {
+    width: 90%;
+    margin: 0 auto;
   }
 }
 

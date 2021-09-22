@@ -1,46 +1,50 @@
 <ng-container *ngIf="home$ | async as home">
   <div class="header">
-    <app-banner-header
-      [url]="home.banner"
-      [logoUrl]="home.logo"
-    ></app-banner-header>
+    <app-banner-header [url]="home.banner"></app-banner-header>
   </div>
+
   <div class="description">
     <h1>{{ home.brandName }}</h1>
     <p>
       {{ home.brandDescription }}
     </p>
   </div>
-  <a class="card" routerLink="/products">
-    <chx-card shadow="medium">
-      <div class="container">
-        <span><i class="fas fa-utensils"></i></span>
-        <h2>Cardapio</h2>
-      </div>
-    </chx-card>
-  </a>
-  <a class="card" [href]="home.socialMedias.whatsapp">
-    <chx-card shadow="medium">
-      <div class="container">
-        <span><i class="fab fa-whatsapp"></i></span>
-        <h2>Whatsapp</h2>
-      </div>
-    </chx-card>
-  </a>
-  <a class="card" [href]="home.socialMedias.facebook">
-    <chx-card shadow="medium">
-      <div class="container">
-        <span><i class="fab fa-facebook"></i></span>
-        <h2>Facebook</h2>
-      </div>
-    </chx-card>
-  </a>
-  <a class="card" [href]="home.socialMedias.instagram">
-    <chx-card shadow="medium">
-      <div class="container">
-        <span><i class="fab fa-instagram"></i></span>
-        <h2>Instagram</h2>
-      </div>
-    </chx-card>
-  </a>
+
+  <div class="card-wrapper">
+    <a class="card" routerLink="/products">
+      <chx-card shadow="medium">
+        <div class="container">
+          <span><i class="fas fa-utensils"></i></span>
+          <h2>Cardapio</h2>
+        </div>
+      </chx-card>
+    </a>
+
+    <a class="card" [href]="home.socialMedias.whatsapp">
+      <chx-card shadow="medium">
+        <div class="container">
+          <span><i class="fab fa-whatsapp"></i></span>
+          <h2>Whatsapp</h2>
+        </div>
+      </chx-card>
+    </a>
+
+    <a class="card" [href]="home.socialMedias.facebook">
+      <chx-card shadow="medium">
+        <div class="container">
+          <span><i class="fab fa-facebook"></i></span>
+          <h2>Facebook</h2>
+        </div>
+      </chx-card>
+    </a>
+
+    <a class="card" [href]="home.socialMedias.instagram">
+      <chx-card shadow="medium">
+        <div class="container">
+          <span><i class="fab fa-instagram"></i></span>
+          <h2>Instagram</h2>
+        </div>
+      </chx-card>
+    </a>
+  </div>
 </ng-container>
