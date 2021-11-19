@@ -8,6 +8,10 @@ on:
     paths:
       - "projects/catalogo/**"
 
+  workflow_dispatch:
+    paths:
+      - "projects/catalogo/**"
+
 #on:
 # Triggers the workflow on push or pull request events but only for the main branch
 # push:
@@ -39,3 +43,5 @@ jobs:
         run: |
           npm install # or yarn install
           npm run test:catalogo
+
+  workflow_dispatch:
