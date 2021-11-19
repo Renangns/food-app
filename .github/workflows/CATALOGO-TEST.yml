@@ -34,4 +34,4 @@ jobs:
       - name: Run a Test CI
         run: |
           npm install # or yarn install
-          npm run test:ui
+          npm run test:catalogo
