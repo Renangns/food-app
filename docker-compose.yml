@@ -1,0 +1,16 @@
+# docker-compose
+version: "3.7"
+
+services:
+  food-app-front:
+    build: .
+    ports:
+      - 4200:4200
+      - 9876:9876
+    working_dir:  /home/node/food-app-front
+    volumes:
+      - ./:/home/node/food-app-front
+      - node_modules:/home/node/food-app-front/node_modules
+
+volumes:
+  node_modules:
