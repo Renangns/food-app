@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
 export class HomeComponent implements OnInit {
   home$: Observable<Home>;
   constructor(private service: HomeService) {
-    this.home$ = service.getHomeInfos();
+    this.home$ = this.service.getHomeInfos();
   }
 
   ngOnInit(): void {}
