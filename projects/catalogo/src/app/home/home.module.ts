@@ -1,3 +1,4 @@
+import { LogoModule } from './../shared/components/logo/logo.module';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';

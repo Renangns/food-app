@@ -12,7 +12,7 @@ export class HomeService {
     return of({
       banner: 'https://loremflickr.com/1980/600',
       logo: 'https://www.logaster.com.br/blog/wp-content/uploads/sites/6/2019/03/0102_t_sushi-house-logo_6.png',
-      brandName: 'Sushi House',
+      brandName: 'Sushi House container',
       brandDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever since the`,
       socialMedias: {
