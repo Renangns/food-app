@@ -7,10 +7,10 @@ services:
     ports:
       - 4200:4200
       - 9876:9876
-    working_dir:  /home/node/food-app-front
+    working_dir: /home/node/food-app-front/food-app-front
     volumes:
       - ./:/home/node/food-app-front
-      - node_modules:/home/node/food-app-front/node_modules
+      - node_modules:/home/node/app/node_modules
 
 volumes:
   node_modules:

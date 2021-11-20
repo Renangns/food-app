@@ -1,4 +1,4 @@
-FROM node:lts as angular
+FROM node:lts
 
 WORKDIR /home/node/food-app-front
 
