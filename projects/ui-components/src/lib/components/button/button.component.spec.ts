@@ -1,10 +1,4 @@
-import { DebugElement } from '@angular/core';
-import {
-  ComponentFixture,
-  fakeAsync,
-  TestBed,
-  tick,
-} from '@angular/core/testing';
+import { ComponentFixture, fakeAsync, TestBed, tick } from '@angular/core/testing';
 
 import { ButtonComponent } from './button.component';
 

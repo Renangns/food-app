@@ -1,0 +1,27 @@
+div {
+  background-color: #e0e0e0;
+  display: inline-block;
+  padding: 0.4em 0.8em;
+  border-radius: 20px;
+  font-size: 1em;
+}
+
+div:hover, div:focus-within {
+  background: #ccc
+}
+
+/* Ripple effect */
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+
+.ripple:hover {
+  background: #ccc radial-gradient(circle, transparent 1%, #e0e0e0 1%) center/15000%;
+}
+
+.ripple:active {
+  background-color: #e0e0e0;
+  background-size: 100%;
+  transition: background 0s;
+}

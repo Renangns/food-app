@@ -35,8 +35,7 @@ export class ButtonComponent implements OnInit {
   }
 
   get disabled(): boolean {
-    // tslint:disable-next-line: no-non-null-assertion
-    return this._disabled!;
+    return this._disabled;
   }
 
   /**
@@ -51,8 +50,7 @@ export class ButtonComponent implements OnInit {
   }
 
   get type(): string {
-    // tslint:disable-next-line: no-non-null-assertion
-    return this._type!;
+    return this._type;
   }
 
   /**
@@ -67,8 +65,7 @@ export class ButtonComponent implements OnInit {
   }
 
   get small(): boolean {
-    // tslint:disable-next-line: no-non-null-assertion
-    return this._small!;
+    return this._small;
   }
 
   /** action to be executed when the users click on button. */
