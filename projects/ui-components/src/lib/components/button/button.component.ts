@@ -9,9 +9,9 @@ const BUTTON_TYPE_DEFAULT = 'default';
   styleUrls: ['./button.component.css'],
 })
 export class ButtonComponent implements OnInit {
-  private _disabled? = false;
-  private _type? = 'default';
-  private _small? = false;
+  private _disabled = false;
+  private _type = 'default';
+  private _small = false;
 
   /**
    * @optional
@@ -31,7 +31,7 @@ export class ButtonComponent implements OnInit {
    * Disables the button preveting the user from interacting with it.
    */
   @Input('disabled') set disabled(value: boolean) {
-    this._disabled = value === undefined ? false : true;
+    this._disabled = value;
   }
 
   get disabled(): boolean {
@@ -63,7 +63,7 @@ export class ButtonComponent implements OnInit {
    * Sets the button to have a small size
    */
   @Input('small') set small(value: boolean) {
-    this._small = undefined ? false : true;
+    this._small = value;
   }
 
   get small(): boolean {

@@ -27,7 +27,7 @@ class TestLargeBoxShadowComponent {}
 class TestExtraLargeBoxShadowComponent {}
 
 @Component({
-  template: `<input type="text" chxBoxShadow="" />`,
+  template: `<input type="text" chxBoxShadow="a" />`,
 })
 class TesWithOutBoxShadowComponent {}
 
@@ -66,6 +66,7 @@ describe('BoxShadowDirective', () => {
         TestMediumBoxShadowComponent,
         TestLargeBoxShadowComponent,
         TestExtraLargeBoxShadowComponent,
+        TesWithOutBoxShadowComponent,
         BoxShadowDirective,
       ],
     });
@@ -126,8 +127,10 @@ describe('BoxShadowDirective', () => {
   });
 
   it('should not apply shadow', () => {
+    fixtureN.detectChanges();
     const nativeElement = inputElN.nativeElement;
     const shadow = nativeElement.style.boxShadow;
     expect(shadow).toBe('');
   });
+
 });
