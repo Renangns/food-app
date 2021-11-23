@@ -6,7 +6,7 @@ const BUTTON_TYPE_DEFAULT = 'default';
 @Component({
   selector: 'chx-button',
   templateUrl: './button.component.html',
-  styleUrls: ['./button.component.css'],
+  styleUrls: ['./button.component.scss'],
 })
 export class ButtonComponent implements OnInit {
   private _disabled = false;

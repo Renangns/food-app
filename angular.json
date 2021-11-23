@@ -118,6 +118,11 @@
     },
     "ui-components": {
       "projectType": "library",
+      "schematics": {
+          "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "root": "projects/ui-components",
       "sourceRoot": "projects/ui-components/src",
       "prefix": "lib",

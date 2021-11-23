@@ -3,7 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'chx-card',
   templateUrl: './card.component.html',
-  styleUrls: ['./card.component.css'],
+  styleUrls: ['./card.component.scss'],
 })
 export class CardComponent implements OnInit {
   private _shadow: string | null = '';
